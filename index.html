@@ -8,11 +8,19 @@
         top: 50px;
         left: 100px;
     }
-    img {
+    #pfp {
         position: absolute;
         top: 150px;
         left: 100px;
-        width: 500px;
+        width: 200px;
+        height: 200px;
+    }
+    #gif {
+        position: absolute;
+        top: 150px;
+        left: 100px;
+        width: 200px;
+        height: 200px;
     }
     h2 {
         font-size: 50px;
@@ -25,7 +33,18 @@
 </head>
 <body>
     <h1>current pfp:</h1>
-    <img src="9a04d0cd9240ec46bbc7d0a1738ea445.jpg" alt="current pfp" width = "200" height = "200">
+    <img id="pfp" src="9a04d0cd9240ec46bbc7d0a1738ea445.jpg" alt="current pfp">
+    <img id ="gif" src="shohei-ohtani.gif" alt="ohtani gif">
     <h2>is it sho-time?</h2>
+    <script>
+        let shotime = true;
+        if(shotime){
+            document.getElementById("status").textContent= "It's Shotime!";
+        }
+        else{
+            document.getElementById("status").textContent= "No Shotime :(";
+        }
+        }
+    </script>
 </body>
 </html>
